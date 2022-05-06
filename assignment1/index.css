@@ -1,1 +1,12 @@
-
+.square {
+  background: rgb(255, 251, 0);
+  float: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 340px;
+  height: 340px;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+  width: 340px;
+}
