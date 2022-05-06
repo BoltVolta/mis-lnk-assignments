@@ -1,0 +1,13 @@
+.container {
+  height: 200px;
+  position: relative;
+  text-align: center;
+}
+
+.vertical-center {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
