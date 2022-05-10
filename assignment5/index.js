@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-const Animals = () => {
-  const data = ['dog', 'cat', 'chicken', 'cow', 'sheep', 'horse']
+
+function AnimalList(props) {
+  const animals = props.animals;
+  const listItems = animals.map((animals) =>
+    <li>{animals}</li>
+  );
   return (
-    <div>
-      {data.map((animals) => (
-        <li>{animals}</li>))}
-    </div>
-    )
+    <ul>{listItems}</ul>
+  );
 }
 
-const app = (
-  <Animals />
-)
-
+const animals = ['dog', 'cat', 'chicken', 'cow', 'sheep', 'horse']
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(app, root)
+root.render(<AnimalList animals={animals}/>)
+
