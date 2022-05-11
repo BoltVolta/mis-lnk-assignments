@@ -1,0 +1,15 @@
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border: 5px solid blueviolet;
+    width: 10%;
+    position: relative;
+    text-align: center;
+  }
+
+.unordered-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
