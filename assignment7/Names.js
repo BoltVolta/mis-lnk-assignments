@@ -4,7 +4,6 @@ export default function Names() {
     const [values, setValues] = useState({
 	firstName: '',
 	lastName: '',
-	email: '',
 });
 const [submitted, setSubmitted] = useState(false);
 
