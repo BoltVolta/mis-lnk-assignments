@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './Names.css'
 
 export default function Names() {
     const [values, setValues] = useState({
@@ -28,8 +29,8 @@ const handleSubmit = (event) => {
 };
 
     return(
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="body">
+            <form className="form" onSubmit={handleSubmit}>
                 { submitted ? alert('Hello ' + values.firstName + ' ' + values.lastName)  : null }
                 <input
                   id="first-name"
@@ -49,7 +50,7 @@ const handleSubmit = (event) => {
                   value={values.lastName}
                   onChange={handleLastNameInputChange}
                 />
-                <button type="submit">Greet me</button>
+                <button className="button" type="submit">Greet me</button>
             </form>
         </div>
     )
