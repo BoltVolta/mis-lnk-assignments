@@ -7,7 +7,14 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Avatar from '@mui/material/Avatar';
 
+
 export default function ButtonAppBar() {
+   const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -16,6 +23,7 @@ export default function ButtonAppBar() {
             size="large"
             edge="start"
             color="inherit"
+            onClick={handleMenu}
             aria-label="menu"
             sx={{ mr: 2 }}
           >
