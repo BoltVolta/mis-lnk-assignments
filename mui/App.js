@@ -9,10 +9,10 @@ import Avatar from '@mui/material/Avatar';
 
 
 export default function ButtonAppBar() {
-   const [anchorEl, setAnchorEl] = React.useState(null);
+   const [anchor, setAnchor] = React.useState(null);
 
   const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
+    setAnchor(event.currentTarget);
   };
 
   return (
