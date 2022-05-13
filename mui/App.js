@@ -40,7 +40,7 @@ export default function ButtonAppBar() {
                 color="inherit"
                 edge="end"
               />
-                <Avatar alt="John Doe" src="" />
+                <Avatar alt="John Doe" src="/static/images/avatar/1.jpg" />
         </Toolbar>
       </AppBar>
     </Box>
